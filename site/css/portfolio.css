@@ -23,15 +23,23 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -86,6 +94,8 @@ p {
 .column ul {
   list-style: none;
   padding: 0;
+
+
 }
 
 .pink-text {
@@ -107,4 +117,19 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.title-page {
+  display: flex;
+  justify-content: center;
+}
+
+.détail {
+  display: flex;
+  justify-content: center;
+}
+
+.avatarimg {
+  display: flex;
+  justify-content: center;
 }
