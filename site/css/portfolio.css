@@ -34,6 +34,8 @@ nav {
 
 }
 
+
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -132,4 +134,10 @@ nav {
 .avatarimg {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
 }
