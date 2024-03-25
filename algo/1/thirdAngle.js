@@ -7,7 +7,16 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  let angle = 180;
+  let addition = a + b;
+  let result = Math.abs(angle - addition);
+  if (addition <= 0 || addition > 180) {
+    console.error("The sum of a + b should be between 0 and 180");
+  } else {
+    return result;
+  }
 }
+
+console.log(thirdAngle(20, 80));
 
 module.exports = thirdAngle;
