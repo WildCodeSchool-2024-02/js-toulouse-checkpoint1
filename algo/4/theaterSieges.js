@@ -18,7 +18,17 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
+  const laSalle = [];
+  for (let i = 0; i < 26; i++) {
+    let rangNumber = i + 1;
+    laSalle.push([rangNumber.toLocaleString()]);
+    for (let j = 0; j < 100; j++) {
+      let colNumber = j + 1;
+      laSalle[i][j] = rangNumber.toLocaleString() + "-" + colNumber.toLocaleString();
+    }
+  }
+  return laSalle;
   // Your code here !
 }
-
+theaterSieges();
 module.exports = theaterSieges;
