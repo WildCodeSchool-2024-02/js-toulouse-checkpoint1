@@ -60,7 +60,8 @@ button:focus {
   color: red;
 }
 
-.avatar-img {
+.avatar-img,
+.btn-changes-name {
   cursor: pointer;
 }
 
