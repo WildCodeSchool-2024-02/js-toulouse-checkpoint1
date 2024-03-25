@@ -1,5 +1,5 @@
 /*  YOU DON'T NEED TO TOUCH THIS FILE */
-@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   --radius: 5px;
   --borderTemplate: 1px solid;
 
-  --darkColor : #000000;
+  --darkColor: #000000;
   --textColor: #39424e;
   --wildColor: #f76c6c;
   --lightWildColor: #ffc0cb;
@@ -58,4 +58,35 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
+
+.avatar-img {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  header nav {
+    justify-content: space-between;
+  }
+
+  .info-developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop-img {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
