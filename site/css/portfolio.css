@@ -69,6 +69,10 @@ p{
   justify-content: center;
 }
 
+.column{
+  width: 100%;
+}
+
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
