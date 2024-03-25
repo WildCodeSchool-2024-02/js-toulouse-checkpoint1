@@ -13,7 +13,9 @@ button.addEventListener("click", () => {
   const span = document.querySelector(".description span");
   span.style.color = "white";
   const descriptionBoxes = document.querySelectorAll(".description");
+  const hFour = document.querySelectorAll("h4");
   const userColorChoice = prompt("Enter a color");
   descriptionBoxes.forEach((element) => (element.style.backgroundColor = userColorChoice));
+  hFour.forEach((element) => (element.style.color = userColorChoice));
   span.innerText = prompt("what's your name ?");
 });
