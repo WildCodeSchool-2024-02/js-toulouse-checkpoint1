@@ -10,9 +10,19 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 
 ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"]
 */
+resultat = ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"];
 
 function getPoints(results) {
-  // Your code here !
+  let sum = 0;
+  for (let i = 0; i < results.length; i++) {
+    const [ourScore, uselessCharact, thereScore] = results[i];
+    if (parseInt(ourScore) > parseInt(thereScore)) {
+      sum += 3;
+    } else if (parseInt(ourScore) === parseInt(thereScore)) {
+      sum += 1;
+    } else sum += 0;
+  }
+  return sum;
 }
-
+console.log(getPoints(resultat));
 module.exports = getPoints;
