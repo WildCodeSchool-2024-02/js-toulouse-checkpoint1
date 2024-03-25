@@ -33,7 +33,5 @@ function findAdults(persons) {
   let adultMen = persons.filter(person => person.age >= 18 && person.sex === "male");
 
   return [adultWomen, adultMen]
-
-
 }
 module.exports = findAdults;
