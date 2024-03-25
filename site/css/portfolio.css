@@ -143,6 +143,18 @@ button {
   cursor: pointer;
 }
 
+.disabled {
+  opacity: 30%;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100%;
+}
 @media screen and (min-width: 700px) {
   header nav {
     display: flex;
@@ -157,5 +169,13 @@ button {
   }
   .skills-container {
     flex-direction: row-reverse;
+  }
+  #box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box {
+    width: 25%;
   }
 }
