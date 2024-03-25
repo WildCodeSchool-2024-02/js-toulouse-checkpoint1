@@ -5,6 +5,8 @@ lui-même contenant deux sous-tableaux :
 - Le second ne contient que des hommes adultes
 (Étant donné qu'une personne est un adulte si elle a 18 ans ou plus)
 
+
+
 const persons = [
   { name: 'Mary Poppins', age: 32, sex: 'female' },
   { name: 'Tony Stark', age: 36, sex: 'male' },
@@ -26,7 +28,12 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
-}
+  // Your code here ! Méthode group(by)
+  let adultWomen = persons.filter(person => person.age >= 18 && person.sex === "female");
+  let adultMen = persons.filter(person => person.age >= 18 && person.sex === "male");
 
+  return [adultWomen, adultMen]
+
+
+}
 module.exports = findAdults;
