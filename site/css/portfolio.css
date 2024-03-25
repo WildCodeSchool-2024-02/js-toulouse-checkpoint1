@@ -130,4 +130,9 @@ p {
   .desktop img {
     display: none;
   }
+
+  .skills-list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
