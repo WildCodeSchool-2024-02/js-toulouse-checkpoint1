@@ -11,7 +11,7 @@ function thirdAngle(a, b) {
   let c;
   c =
     a + b >= 180
-      ? "le troisieme angle d'un triangle ne peut pas être égale ou inférieur à 0"
+      ? "le troisieme angle d'un triangle ne peut pas être égal ou inférieur à 0"
       : 180 - (a + b);
   return c;
 }
