@@ -12,7 +12,7 @@ description.appendChild(button);
 button.addEventListener("click", () => {
   const span = document.querySelector(".description span");
   span.style.color = "white";
-  const descriptionBoxes = document.querySelectorAll(".description");
+  const descriptionBoxes = document.querySelectorAll(".description, button");
   const hFour = document.querySelectorAll("h4,a");
 
   const userColorChoice = prompt("Enter a color");
