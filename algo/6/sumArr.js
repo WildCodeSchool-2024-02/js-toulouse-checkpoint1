@@ -10,7 +10,56 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
+  const maxLength = Math.max(arrayA.length, arrayB.length);
+
+  let result = [];
+
+  for (let i = 0; i < maxLength; i++) {
+    /**
+|--------------------------------------------------
+| logique complète décortiquée!A la Marseillaise...SAAAAAAAL!!
+|--------------------------------------------------
+*/
+
+    // const numA = Number(arrayA[i]);
+    // const numB = Number(arrayB[i]);
+
+    // if (numA && numB) {
+    //   result.push((numA + numB).toString());
+    // } else if (numA && !numB) {
+    //   result.push(numA.toString());
+    // } else if (!numA && numB) {
+    //   result.push(numB.toString());
+    // }
+
+    /**
+|--------------------------------------------------
+| logique factorisée avec ternaires...Peut mieux faire.T'es encore un noob!
+|--------------------------------------------------
+*/
+
+    // result.push(
+    //   (
+    //     (arrayA[i] ? Number(arrayA[i]) : 0) +
+    //     (arrayB[i] ? Number(arrayB[i]) : 0)
+    //   ).toString()
+    // );
+
+    /**
+|--------------------------------------------------
+| logique factorisée pour les boss
+|--------------------------------------------------
+*/
+
+    result.push(
+      ((Number(arrayA[i]) || 0) + (Number(arrayB[i]) || 0)).toString()
+    );
+  }
+
+  console.log(result);
+
+  return result;
 }
 
 module.exports = sumArr;
+
