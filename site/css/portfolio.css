@@ -132,6 +132,16 @@ p {
   justify-content: center;
   align-items: center;
 }
+button {
+  display: block;
+  margin: var(--gutter) auto;
+  color: var(--light);
+  padding: var(--gutter);
+  border-radius: calc(var(--radius) * 2);
+  background-color: var(--wildColor);
+  border: none;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 700px) {
   header nav {
