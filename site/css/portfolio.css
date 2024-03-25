@@ -108,3 +108,34 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+nav {
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.column {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skills {
+    flex-direction: row-reverse;
+  }
+}
