@@ -4,11 +4,12 @@ body {
 }
 
 header nav ul {
-  display: flex;
+  display: flex; 
   justify-content: flex-end;
   width: 100%;
-  align-items: center;
+  align-items: end;
 }
+
 
 main {
   padding: calc(var(--gutter) * 3);
@@ -118,3 +119,9 @@ button {
 .problem-no-visible {
   display: none;
 }
+
+@media screen and(min-width: 700px) { 
+  .desktop {
+     display: none;
+   }
+ }
